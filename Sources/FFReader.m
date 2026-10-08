@@ -1,15 +1,17 @@
 #import "FFReader.h"
 #import <mach/mach.h>
-#import <mach/mach_vm.h>
 #import <mach-o/loader.h>
 #import <sys/sysctl.h>
 #import <errno.h>
 #import <string.h>
 #import <stdlib.h>
 
+_Static_assert(sizeof(vm_address_t) == 8, "Requires 64-bit iOS VM addresses");
+_Static_assert(sizeof(vm_size_t) == 8, "Requires 64-bit iOS VM sizes");
+
 static BOOL ReadBytes(mach_port_t task, uint64_t address, void *buffer, size_t size) {
-    mach_vm_size_t actual = 0;
-    return mach_vm_read_overwrite(task, address, size, (mach_vm_address_t)buffer, &actual) == KERN_SUCCESS && actual == size;
+    vm_size_t actual = 0;
+    return vm_read_overwrite(task, (vm_address_t)address, (vm_size_t)size, (vm_address_t)buffer, &actual) == KERN_SUCCESS && actual == size;
 }
 static BOOL Pointer(uint64_t p) { return p >= 0x100000000ULL && p < 0x1000000000000ULL && !(p & 7); }
 static NSString *Hex(uint64_t n) { return [NSString stringWithFormat:@"0x%llx", (unsigned long long)n]; }
