@@ -24,10 +24,15 @@ IPA xuất từ thiết bị: com.dts.freefiremax, phiên bản 2.132.1, build 2
 
 ## Kiểm tra
 
-Máy tạo mã nguồn chạy Windows, không có Xcode/iOS SDK/compiler iOS. Chưa compile native, chưa thử trên iPhone, chưa có IPA/TIPA mới. Các kiểm tra hiện tại chỉ gồm cấu trúc plist, cú pháp shell và cấu trúc gói nguồn. Xem VALIDATION.json. Không coi các kiểm tra đó là bằng chứng app chạy được.
+Máy tạo mã nguồn chạy Windows, không có Xcode/iOS SDK/compiler iOS. Đã compile native thành công trên GitHub Actions, đã tải build/FFMAX-NewHUD.tipa về máy và kiểm tra Mach-O arm64/iOS 16.0, cấu trúc chữ ký, entitlement và ZIP CRC. Chưa thử trên iPhone. Các kiểm tra hiện tại chỉ gồm cấu trúc plist, cú pháp shell và cấu trúc gói nguồn. Xem VALIDATION.json. Không coi các kiểm tra đó là bằng chứng app chạy được.
 
 ## Không có Mac: build bằng GitHub Actions
 
-Có sẵn .github/workflows/build.yml. Tạo một repository GitHub của bạn, đưa toàn bộ nội dung thư mục này lên (bao gồm thư mục .github). Mở Actions → Build iOS menu → Run workflow. Khi workflow thành công, tải artifact FFMAX-NewHUD, giải nén để lấy FFMAX-NewHUD.tipa rồi cài bằng TrollStore. Workflow dùng máy macOS của GitHub; không cần Mac cá nhân. Cần tài khoản GitHub và Actions được bật. Việc build từ xa chưa được thực hiện trong phiên này và có thể cần sửa lỗi compile phát sinh.
+Có sẵn .github/workflows/build.yml. Tạo một repository GitHub của bạn, đưa toàn bộ nội dung thư mục này lên (bao gồm thư mục .github). Mở Actions → Build iOS menu → Run workflow. Khi workflow thành công, tải artifact FFMAX-NewHUD, giải nén để lấy FFMAX-NewHUD.tipa rồi cài bằng TrollStore. Workflow dùng máy macOS của GitHub; không cần Mac cá nhân. Cần tài khoản GitHub và Actions được bật. Build từ xa đã thành công: https://github.com/dleevn333/ffmax-newhud-20261008/actions/runs/37805213015.
 
-Hướng dẫn chính thức: https://docs.github.com/en/actions/managing-workflow-runs/manually-running-a-workflow và https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts . Chưa có tài khoản/repository được kết nối để chạy workflow tự động.
+Hướng dẫn chính thức: https://docs.github.com/en/actions/managing-workflow-runs/manually-running-a-workflow và https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts . Repository riêng tư đã tạo: https://github.com/dleevn333/ffmax-newhud-20261008 .
+
+
+## Bản cài hiện tại
+
+File: build/FFMAX-NewHUD.tipa. Đây là menu mới/chẩn đoán, chưa có lớp phủ trên game, aim hay ESP. Chưa thử cài thực tế trên iPhone. Không cần gửi thêm log nếu bạn chỉ cần kiểm tra giao diện; chỉ xuất báo cáo khi cần phân tích kết nối.
