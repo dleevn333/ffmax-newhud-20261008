@@ -1,0 +1,18 @@
+name: Build iOS menu
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: macos-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v6
+      - name: Build arm64 app
+        run: bash build-macos.sh
+      - name: Upload TrollStore package
+        uses: actions/upload-artifact@v4
+        with:
+          name: FFMAX-NewHUD
+          path: build/FFMAX-NewHUD.tipa
+          if-no-files-found: error

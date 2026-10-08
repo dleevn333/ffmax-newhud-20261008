@@ -1,0 +1,11 @@
+{
+  "plist_parse": "passed",
+  "build_shell_syntax": "passed",
+  "native_compile": "not_run_no_ios_toolchain",
+  "device_run": "not_run",
+  "overlay": "not_implemented",
+  "aim": "not_implemented",
+  "esp": "not_implemented",
+  "cloud_build": "prepared_not_run",
+  "wsl": "not_installed"
+}
