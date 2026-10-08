@@ -60,7 +60,10 @@
 }
 - (void)exportReport {
  if(self.presentedViewController)return;
- UIActivityViewController *share=[[UIActivityViewController alloc] initWithActivityItems:@[[self reportURL]] applicationActivities:nil];share.popoverPresentationController.sourceView=self.exportButton;share.popoverPresentationController.sourceRect=self.exportButton.bounds;[self presentViewController:share animated:YES completion:nil];
+ NSURL *snapshot=[[[[NSFileManager defaultManager] URLsForDirectory:NSCachesDirectory inDomains:NSUserDomainMask] firstObject] URLByAppendingPathComponent:@"FFESP-V2.log"];
+ NSData *report=[NSData dataWithContentsOfURL:[self reportURL]];
+ if(!report || ![report writeToURL:snapshot options:NSDataWritingAtomic error:nil])return;
+ UIActivityViewController *share=[[UIActivityViewController alloc] initWithActivityItems:@[snapshot] applicationActivities:nil];share.popoverPresentationController.sourceView=self.exportButton;share.popoverPresentationController.sourceRect=self.exportButton.bounds;[self presentViewController:share animated:YES completion:nil];
 }
 @end
 static UIWindow *overlay;
