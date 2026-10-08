@@ -1,0 +1,17 @@
+name: Build integrated ESP
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: macos-15-intel
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v6
+      - name: Test geometry and build ESP library
+        run: bash build-esp-macos.sh
+      - uses: actions/upload-artifact@v4
+        with:
+          name: FFMAXESP
+          path: build/FFMAXESP.dylib
+          if-no-files-found: error
