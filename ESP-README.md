@@ -1,4 +1,4 @@
-# ESP tích hợp — bản thử nghiệm đầu tiên
+# ESP tích hợp — bản thử nghiệm V2
 
 Bản cài: build/FreeFireMAX-2.132.1-ESP-V2-TEST.ipa. Đây là IPA game có menu tích hợp; không phải ứng dụng HUD riêng. Bundle ID vẫn là com.dts.freefiremax; bản này có thể thay game cùng ID đang cài. Chưa thử cài bằng TrollStore hay chạy trên iPhone. Không khẳng định ESP hoạt động chỉ từ kết quả build.
 
@@ -12,7 +12,11 @@ Bộ đọc dùng il2cpp_runtime_invoke với GameFacade.CurrentMatch, Camera.ge
 
 Kiểm tra: 8 tình huống phép tính khung trên portrait/landscape, điểm phía sau camera, tọa độ NaN, chiều cao đảo, kích thước 0, ngoài màn hình, khung cắt biên đều đạt trên runner. Dylib đã compile arm64 iOS16 và ký ad hoc. Gói IPA đã kiểm tra ZIP CRC; chỉ UnityFramework và Info.plist của game được sửa, thêm FFMAXESP.dylib; tất cả thành viên gốc khác có hash giống IPA đầu vào. Chữ ký UnityFramework phải được ký lại khi cài; không coi việc kiểm tra cấu trúc gói là xác minh cài/chạy thành công.
 
-Build nguồn bằng bash build-esp-macos.sh hoặc workflow Build integrated ESP. Thư viện được build trên GitHub; IPA game được ghép tại Windows, không tải IPA game lên repository. Script ghép: C:/Users/Admin/Downloads/FFMAX-analysis/package-integrated-esp.py. Hồ sơ UUID đầu vào d3f49d05bfb830ecaf6a032ba5657074.
+Build nguồn bằng bash build-esp-macos.sh hoặc workflow Build integrated ESP. Hồ sơ UUID đầu vào d3f49d05bfb830ecaf6a032ba5657074.
+
+Để workflow xuất IPA: vào Actions → Build integrated ESP → Run workflow, điền `ipa_url` bằng link HTTPS tải trực tiếp IPA đã giải mã phiên bản 2.132.1, rồi chạy. Tải artifact `FreeFireMAX-ESP-V2-IPA` và giải nén để lấy IPA. Nếu để trống URL, workflow chỉ xuất thư viện. URL hiện trong thông tin lần chạy; artifact trong repo public có thể được người khác tải. IPA gốc không được commit vào repo. Workflow kiểm tra UUID, ZIP CRC và hash các thành viên không sửa; artifact giữ 3 ngày. TrollStore cần ký lại khi cài.
+
+Đóng gói tại máy có Python: `python package-esp.py --source original.ipa --library build/FFMAXESP.dylib --output build/FreeFireMAX-2.132.1-ESP-V2-TEST.ipa`.
 
 
 ## V2 — sửa bước tìm danh sách người chơi
