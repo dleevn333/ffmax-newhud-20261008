@@ -36,3 +36,6 @@ Hướng dẫn chính thức: https://docs.github.com/en/actions/managing-workfl
 ## Bản cài hiện tại
 
 File: build/FFMAX-NewHUD.tipa. Đây là menu mới/chẩn đoán, chưa có lớp phủ trên game, aim hay ESP. Chưa thử cài thực tế trên iPhone. Không cần gửi thêm log nếu bạn chỉ cần kiểm tra giao diện; chỉ xuất báo cáo khi cần phân tích kết nối.
+
+
+ESP tích hợp trong IPA game là mô-đun riêng, xem ESP-README.md. Các giới hạn của ứng dụng menu/chẩn đoán ở trên không mô tả mô-đun ESP tích hợp.

@@ -37,7 +37,16 @@
     }
   ],
   "signature_blob": "present",
-  "cloud_run": "https://github.com/dleevn333/ffmax-newhud-20261008/actions/runs/37807343064",
+  "cloud_run": "https://github.com/dleevn333/ffmax-newhud-20261008/actions/runs/37809644821",
   "device_test": "not_run",
-  "esp_runtime": "not_verified_on_device"
+  "esp_runtime": "not_verified_on_device",
+  "reader_version": 2,
+  "bridge_regression": "passed_inherited_fields_generic_names_unrelated_dictionaries_static_fields_dedup",
+  "device_test_v2": "not_run",
+  "previous_device_log": {
+    "status": "Chưa nhận diện được danh sách người chơi",
+    "collections": 0,
+    "players": 0,
+    "camera_pipeline": "reached"
+  }
 }

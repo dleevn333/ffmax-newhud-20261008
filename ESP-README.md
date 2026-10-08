@@ -1,6 +1,6 @@
 # ESP tích hợp — bản thử nghiệm đầu tiên
 
-Bản cài: build/FreeFireMAX-2.132.1-ESP-TEST.ipa. Đây là IPA game có menu tích hợp; không phải ứng dụng HUD riêng. Bundle ID vẫn là com.dts.freefiremax; bản này có thể thay game cùng ID đang cài. Chưa thử cài bằng TrollStore hay chạy trên iPhone. Không khẳng định ESP hoạt động chỉ từ kết quả build.
+Bản cài: build/FreeFireMAX-2.132.1-ESP-V2-TEST.ipa. Đây là IPA game có menu tích hợp; không phải ứng dụng HUD riêng. Bundle ID vẫn là com.dts.freefiremax; bản này có thể thay game cùng ID đang cài. Chưa thử cài bằng TrollStore hay chạy trên iPhone. Không khẳng định ESP hoạt động chỉ từ kết quả build.
 
 Mở bằng TrollStore để cài. UnityFramework bị thêm LC_LOAD_DYLIB nên chữ ký cũ không còn khớp; TrollStore phải ký lại binary khi cài. Không dùng bản này để cài trực tiếp qua App Store.
 
@@ -13,3 +13,12 @@ Bộ đọc dùng il2cpp_runtime_invoke với GameFacade.CurrentMatch, Camera.ge
 Kiểm tra: 8 tình huống phép tính khung trên portrait/landscape, điểm phía sau camera, tọa độ NaN, chiều cao đảo, kích thước 0, ngoài màn hình, khung cắt biên đều đạt trên runner. Dylib đã compile arm64 iOS16 và ký ad hoc. Gói IPA đã kiểm tra ZIP CRC; chỉ UnityFramework và Info.plist của game được sửa, thêm FFMAXESP.dylib; tất cả thành viên gốc khác có hash giống IPA đầu vào. Chữ ký UnityFramework phải được ký lại khi cài; không coi việc kiểm tra cấu trúc gói là xác minh cài/chạy thành công.
 
 Build nguồn bằng bash build-esp-macos.sh hoặc workflow Build integrated ESP. Thư viện được build trên GitHub; IPA game được ghép tại Windows, không tải IPA game lên repository. Script ghép: C:/Users/Admin/Downloads/FFMAX-analysis/package-integrated-esp.py. Hồ sơ UUID đầu vào d3f49d05bfb830ecaf6a032ba5657074.
+
+
+## V2 — sửa bước tìm danh sách người chơi
+
+Log bản đầu đã tới bước camera/kích thước màn hình nhưng collections=0, players=0. V2 duyệt trường của lớp hiện tại và lớp cha, nhận diện Dictionary theo lớp/kiểu trường rồi xác minh kiểu value là Player trước khi đọc phần tử. Bỏ điều kiện chuỗi tên Dictionary phải chứa tên Player. Chưa chứng minh điều kiện nào là nguyên nhân duy nhất trên iPhone; log V2 có matchHierarchy, fieldSamples, containerSamples, dictionaryFields, playerDictionaries để đối chiếu.
+
+Kiểm thử hồi quy trên mã bộ đọc thực tế dùng API IL2CPP giả lập: trường danh sách trong lớp cha, tên generic không có tham số kiểu, danh sách không chứa Player (có giá trị giả không được đọc), bỏ trường static, loại nhân vật trùng. Tất cả đã đạt trên macOS; phép tính khung cũng đạt. Chưa xác nhận ESP V2 hoạt động trên thiết bị.
+
+Nút Log xuất FFESP-V2.log, dùng bản chụp tĩnh để nội dung không thay đổi khi bảng chia sẻ mở. Được ghi từ trạng thái frame hiện tại; có thể không chứa lịch sử các frame trước.
