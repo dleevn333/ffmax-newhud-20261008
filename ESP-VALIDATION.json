@@ -1,0 +1,43 @@
+{
+  "native_build": "passed",
+  "geometry_tests": "passed",
+  "library": "arm64 iOS16 Mach-O dylib",
+  "library_commands": [
+    {
+      "command": "0xd",
+      "name": "@rpath/FFMAXESP.dylib"
+    },
+    {
+      "command": "0xc",
+      "name": "/System/Library/Frameworks/UIKit.framework/UIKit"
+    },
+    {
+      "command": "0xc",
+      "name": "/System/Library/Frameworks/Foundation.framework/Foundation"
+    },
+    {
+      "command": "0xc",
+      "name": "/usr/lib/libobjc.A.dylib"
+    },
+    {
+      "command": "0xc",
+      "name": "/usr/lib/libSystem.B.dylib"
+    },
+    {
+      "command": "0xc",
+      "name": "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation"
+    },
+    {
+      "command": "0xc",
+      "name": "/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics"
+    },
+    {
+      "command": "0xc",
+      "name": "/System/Library/Frameworks/QuartzCore.framework/QuartzCore"
+    }
+  ],
+  "signature_blob": "present",
+  "cloud_run": "https://github.com/dleevn333/ffmax-newhud-20261008/actions/runs/37807343064",
+  "device_test": "not_run",
+  "esp_runtime": "not_verified_on_device"
+}
