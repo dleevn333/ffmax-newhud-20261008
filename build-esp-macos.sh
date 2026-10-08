@@ -4,6 +4,10 @@ root="$(cd "$(dirname "$0")" && pwd)"
 mkdir -p "$root/build"
 clang "$root/ESP/Geometry.c" "$root/ESP/GeometryTests.c" -Wall -Wextra -Werror -o "$root/build/geometry-tests"
 "$root/build/geometry-tests"
+clang -fobjc-arc -fmodules -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers \
+ "$root/ESP/UnityBridge.m" "$root/ESP/Geometry.c" "$root/ESP/BridgeTests.m" \
+ -framework Foundation -Wl,-export_dynamic -o "$root/build/bridge-tests"
+"$root/build/bridge-tests"
 sdk="$(xcrun --sdk iphoneos --show-sdk-path)"
 xcrun --sdk iphoneos clang -dynamiclib -arch arm64 -isysroot "$sdk" -miphoneos-version-min=16.0 \
  -fobjc-arc -fmodules -Wall -Wextra -Wno-unused-parameter -O2 \
