@@ -1,0 +1,20 @@
+name: Build standalone foundation (ESP blocked)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: macos-15-intel
+    steps:
+      - uses: actions/checkout@v6
+      - name: Test state, build and verify independent app
+        run: bash Standalone/build.sh
+      - uses: actions/upload-artifact@v4
+        with:
+          name: HUD-Foundation-not-ESP
+          path: |
+            build/standalone/*.tipa
+            build/standalone/*.json
+            build/standalone/tests.txt
+          if-no-files-found: error

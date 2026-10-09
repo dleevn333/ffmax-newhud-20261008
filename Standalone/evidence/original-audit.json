@@ -1,0 +1,624 @@
+{
+  "sourceSHA256": "0e0a540f352c6dfb234213fae6d93fec2929ddc0a8e952384f2d90652ab2cbbc",
+  "members": [
+    {
+      "name": "Payload/apple.app/apple",
+      "size": 38766896,
+      "sha256": "6549da13d346ee8b47b242d1a725067a201c6561dc3f7f5f528d7bd9eab9c34d"
+    },
+    {
+      "name": "Payload/apple.app/zh-Hans.lproj/Localizable.strings",
+      "size": 3876,
+      "sha256": "9edbbb23962f3775c5606fb038a732f378d23c92c72ca7a74cacbd1baa0d0d4e"
+    },
+    {
+      "name": "Payload/apple.app/zh-Hans.lproj/InfoPlist.strings",
+      "size": 80,
+      "sha256": "273165ea0b782001e97397c17507a332a960605a2e88508536104ea8fc3b3259"
+    },
+    {
+      "name": "Payload/apple.app/icon.png",
+      "size": 1055991,
+      "sha256": "aa557197272180def6dd0b396f82b8c89c6cc04975810ed87c3a46a2b5b39b2f"
+    },
+    {
+      "name": "Payload/apple.app/en.lproj/Localizable.strings",
+      "size": 3795,
+      "sha256": "11d066451e3c3421678ca6aa9104a0174e918ec244f7d8d8b442949dc10008e2"
+    },
+    {
+      "name": "Payload/apple.app/en.lproj/InfoPlist.strings",
+      "size": 68,
+      "sha256": "a0b3d44c2e6abb975276613bc5bb1b9e141b298b1530dd28ef3eafeb47e556d5"
+    },
+    {
+      "name": "Payload/apple.app/es.lproj/Localizable.strings",
+      "size": 3939,
+      "sha256": "2d9e532ab2d47fcf919ec14d3a55792ce62000f4e585e252a5e89afa645d600a"
+    },
+    {
+      "name": "Payload/apple.app/es.lproj/InfoPlist.strings",
+      "size": 68,
+      "sha256": "a0b3d44c2e6abb975276613bc5bb1b9e141b298b1530dd28ef3eafeb47e556d5"
+    },
+    {
+      "name": "Payload/apple.app/Settings.bundle/zh_Hans.lproj/Root.strings",
+      "size": 229,
+      "sha256": "eb596e635009eae07a642381cd65c9bfecba98b63b1f8ae2db5b074ee7b5860a"
+    },
+    {
+      "name": "Payload/apple.app/Settings.bundle/en.lproj/Root.strings",
+      "size": 205,
+      "sha256": "42ad29e19be8db9298beb6c54080e2ca8069f75c68558c4058943bd44fa296a4"
+    },
+    {
+      "name": "Payload/apple.app/Settings.bundle/es.lproj/Root.strings",
+      "size": 205,
+      "sha256": "42ad29e19be8db9298beb6c54080e2ca8069f75c68558c4058943bd44fa296a4"
+    },
+    {
+      "name": "Payload/apple.app/Settings.bundle/Root.plist",
+      "size": 2006,
+      "sha256": "8e09bef4b1dc25fc679ba846f7422b82edc1a22907a13aff2312b13bfee79343"
+    },
+    {
+      "name": "Payload/apple.app/Info.plist",
+      "size": 2027,
+      "sha256": "fbc76e9d26be3e0eb142f6be35a0330acd0c69ba7608c2280f101aaa64131cf1"
+    },
+    {
+      "name": "Payload/apple.app/dns_antiban.mobileconfig",
+      "size": 2483,
+      "sha256": "ef18c1cdcb37d48b54867c2fee1f17721b03c05dc87a281a93ea4efa52dcf52b"
+    }
+  ],
+  "entitlements": {
+    "com.apple.AXMediaUtilitiesService-access": true,
+    "com.apple.DragUI.accessibility": true,
+    "com.apple.QuartzCore.displayable-context": true,
+    "com.apple.QuartzCore.secure-mode": true,
+    "com.apple.accessibility.api": true,
+    "com.apple.accessibility.physicalinteraction.client": true,
+    "com.apple.accessibility.zoom.client": true,
+    "com.apple.assistivetouch.daemon": true,
+    "com.apple.backboard.client": true,
+    "com.apple.backboardd.global-pointer-event-routing": true,
+    "com.apple.backboardd.launchapplications": true,
+    "com.apple.bluetooth.system": true,
+    "com.apple.carousel.backlightaccess": true,
+    "com.apple.coreaudio.allow-opus-codec": true,
+    "com.apple.coreaudio.register-internal-aus": true,
+    "com.apple.developer.ubiquity-kvstore-identifier": "com.phuongios.trollspeedff",
+    "com.apple.diagnosticd.diagnostic": true,
+    "com.apple.frontboard.debugapplications": true,
+    "com.apple.hid.manager.user-access-device": true,
+    "com.apple.hid.manager.user-access-keyboard": true,
+    "com.apple.idle-timer-services": true,
+    "com.apple.private.MobileGestalt.AllowedProtectedKeys": [
+      "UniqueChipID"
+    ],
+    "com.apple.managedconfiguration.profiled-access": true,
+    "com.apple.pointerui.persistentlyHidePointer": true,
+    "com.apple.private.CoreAuthentication.SPI": true,
+    "com.apple.private.LocalAuthentication.Storage": true,
+    "com.apple.private.acccessibility.motionTrackingClient": true,
+    "com.apple.private.appleaccount.app-hidden-from-icloud-settings": true,
+    "com.apple.private.applecredentialmanager.allow": true,
+    "com.apple.private.assets.accessible-asset-types": [
+      "com.apple.MobileAsset.VoiceServices.CustomVoice",
+      "com.apple.MobileAsset.VoiceServicesVocalizerVoice",
+      "com.apple.MobileAsset.VoiceServices.GryphonVoice",
+      "com.apple.MobileAsset.MacinTalkVoiceAssets",
+      "com.apple.MobileAsset.VoiceServices.CombinedVocalizerVoices"
+    ],
+    "com.apple.private.avfoundation.capture.nonstandard-client.allow": true,
+    "com.apple.private.coreaudio.viewInterruptorName.allow": true,
+    "com.apple.private.hid.client.event-dispatch": true,
+    "com.apple.private.hid.client.event-filter": true,
+    "com.apple.private.hid.client.event-monitor": true,
+    "com.apple.private.hid.client.service-protected": true,
+    "com.apple.private.hid.manager.client": true,
+    "com.apple.private.ids.messaging": [
+      "com.apple.private.alloy.accessibility.switchcontrol"
+    ],
+    "com.apple.private.ids.messaging.urgent-priority": [
+      "com.apple.private.alloy.accessibility.switchcontrol"
+    ],
+    "com.apple.private.kernel.jetsam": true,
+    "com.apple.private.memorystatus": true,
+    "com.apple.private.persona-mgmt": true,
+    "com.apple.private.security.no-sandbox": true,
+    "com.apple.private.sysdiagnose": true,
+    "com.apple.private.ubiquity-additional-kvstore-identifiers": [
+      "com.apple.AssistiveTouch",
+      "com.apple.Accessibility.SwitchControl",
+      "com.apple.Accessibility"
+    ],
+    "com.apple.security.exception.mach-lookup.global-name": [
+      "com.apple.accessibility.motiontrackingd",
+      "com.apple.accessibility.AXSpringBoardServer",
+      "com.apple.accessibility.AXPineBoardServer",
+      "com.apple.accessibility.AXCarouselServer",
+      "AXPerformanceTestReportingServer",
+      "com.apple.telephonyutilities.callservicesdaemon.callstatecontroller",
+      "com.apple.AXMediaUtilitiesService",
+      "com.apple.audio.hapticd",
+      "AccessibilityDebuggerServices",
+      "com.apple.sysdiagnose.service.xpc",
+      "com.apple.TextInput",
+      "com.apple.SBUserNotification",
+      "com.apple.siri.activation.service",
+      "com.apple.commandandcontrol",
+      "com.apple.sharing.accessibility",
+      "com.apple.TextInput.accessibility",
+      "com.apple.appleneuralengine",
+      "com.apple.fontservicesd",
+      "com.apple.PointerUI.pointeruid.service"
+    ],
+    "com.apple.security.exception.mach-lookup.local-name": [
+      "com.apple.AXMediaUtilitiesService"
+    ],
+    "com.apple.security.exception.mach-register.global-name": [
+      "com.phuongios.trollspeedff.gsEvents"
+    ],
+    "com.apple.security.exception.mach-register.local-name": [
+      "com.phuongios.trollspeedff"
+    ],
+    "com.apple.security.exception.shared-preference.read-only": [
+      "com.apple.purplebuddy",
+      "com.apple.uikitservices.userInterfaceStyleMode"
+    ],
+    "com.apple.security.exception.shared-preference.read-write": [
+      "com.apple.assistant.logging"
+    ],
+    "com.apple.security.iokit-user-client-class": [
+      "IOSurfaceRootUserClient",
+      "AGXDeviceUserClient",
+      "IOPMPowerSourceClient"
+    ],
+    "com.apple.security.system-groups": [
+      "systemgroup.com.apple.powerlog"
+    ],
+    "com.apple.springboard-ui.client": true,
+    "com.apple.springboard.CFUserNotification": true,
+    "com.apple.springboard.accessibility-window-hosting": true,
+    "com.apple.springboard.activateassistant": true,
+    "com.apple.springboard.appbackgroundstyle": true,
+    "com.apple.springboard.launchapplications": true,
+    "com.apple.system-task-ports": true,
+    "com.apple.system.diagnostics.iokit-properties": true,
+    "file-read-data": true,
+    "get-task-allow": false,
+    "platform-application": true,
+    "run-unsigned-code": true,
+    "task_for_pid-allow": true,
+    "proc_info-allow": true,
+    "user-preference-read": true,
+    "user-preference-write": true
+  },
+  "entitlementCount": 69,
+  "libraries": [
+    "/usr/lib/libobjc.A.dylib",
+    "/System/Library/Frameworks/Foundation.framework/Foundation",
+    "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation",
+    "/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics",
+    "/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices",
+    "/System/Library/Frameworks/QuartzCore.framework/QuartzCore",
+    "/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit",
+    "/System/Library/Frameworks/UIKit.framework/UIKit",
+    "/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox",
+    "/System/Library/Frameworks/CoreText.framework/CoreText",
+    "/System/Library/Frameworks/Security.framework/Security",
+    "/System/Library/Frameworks/Accelerate.framework/Accelerate",
+    "/System/Library/Frameworks/MetalKit.framework/MetalKit",
+    "/System/Library/PrivateFrameworks/BackBoardServices.framework/BackBoardServices",
+    "/System/Library/PrivateFrameworks/GraphicsServices.framework/GraphicsServices",
+    "/System/Library/PrivateFrameworks/SpringBoardServices.framework/SpringBoardServices",
+    "/usr/lib/libz.1.dylib",
+    "/usr/lib/libSystem.B.dylib",
+    "/usr/lib/libc++.1.dylib"
+  ],
+  "directCalls": [
+    {
+      "address": "0x100005728",
+      "target": "0x101da0254",
+      "symbol": "_dlopen",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x100005750",
+      "target": "0x101da0260",
+      "symbol": "_dlsym",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x100005764",
+      "target": "0x101da0260",
+      "symbol": "_dlsym",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x100005778",
+      "target": "0x101da0260",
+      "symbol": "_dlsym",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x10000578c",
+      "target": "0x101da0260",
+      "symbol": "_dlsym",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x1000057a0",
+      "target": "0x101da0260",
+      "symbol": "_dlsym",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x1004ab804",
+      "target": "0x101da083c",
+      "symbol": "_posix_spawn",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x1004ab820",
+      "target": "0x101da0848",
+      "symbol": "_posix_spawnattr_destroy",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x1004ab964",
+      "target": "0x101da083c",
+      "symbol": "_posix_spawn",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x1004ab980",
+      "target": "0x101da0848",
+      "symbol": "_posix_spawnattr_destroy",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x1004acd80",
+      "target": "0x101da0854",
+      "symbol": "_posix_spawnattr_init",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x1004ace74",
+      "target": "0x101da086c",
+      "symbol": "_posix_spawnattr_set_persona_np",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x1004ace90",
+      "target": "0x101da0878",
+      "symbol": "_posix_spawnattr_set_persona_uid_np",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x1004acea8",
+      "target": "0x101da0860",
+      "symbol": "_posix_spawnattr_set_persona_gid_np",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x1004acfb4",
+      "target": "0x101da0848",
+      "symbol": "_posix_spawnattr_destroy",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x1004ad040",
+      "target": "0x101da0890",
+      "symbol": "_posix_spawnattr_setpgroup",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x1004ad058",
+      "target": "0x101da0884",
+      "symbol": "_posix_spawnattr_setflags",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x1004ad128",
+      "target": "0x101da0848",
+      "symbol": "_posix_spawnattr_destroy",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x1004ada1c",
+      "target": "0x101da0854",
+      "symbol": "_posix_spawnattr_init",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x1004adb2c",
+      "target": "0x101da0890",
+      "symbol": "_posix_spawnattr_setpgroup",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x1004adb44",
+      "target": "0x101da0884",
+      "symbol": "_posix_spawnattr_setflags",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x1004adc14",
+      "target": "0x101da0848",
+      "symbol": "_posix_spawnattr_destroy",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x1004b310c",
+      "target": "0x101da083c",
+      "symbol": "_posix_spawn",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x1004b3128",
+      "target": "0x101da0848",
+      "symbol": "_posix_spawnattr_destroy",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x1004b3264",
+      "target": "0x101da083c",
+      "symbol": "_posix_spawn",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x1004b3280",
+      "target": "0x101da0848",
+      "symbol": "_posix_spawnattr_destroy",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x100df0220",
+      "target": "0x101da0614",
+      "symbol": "_mach_vm_read_overwrite",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x100df036c",
+      "target": "0x101da0614",
+      "symbol": "_mach_vm_read_overwrite",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x100df2128",
+      "target": "0x101da0c68",
+      "symbol": "_task_for_pid",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x100df2338",
+      "target": "0x101da0c74",
+      "symbol": "_task_info",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x100df2404",
+      "target": "0x101da0614",
+      "symbol": "_mach_vm_read_overwrite",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x100df25b0",
+      "target": "0x101da0608",
+      "symbol": "_mach_vm_read",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x100df27e4",
+      "target": "0x101da0614",
+      "symbol": "_mach_vm_read_overwrite",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x100df4cc8",
+      "target": "0x101da0d34",
+      "symbol": "_vm_write",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x100df53b8",
+      "target": "0x101da0d28",
+      "symbol": "_vm_read_overwrite",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x101b2e030",
+      "target": "0x101da0254",
+      "symbol": "_dlopen",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x101b2e098",
+      "target": "0x101da0260",
+      "symbol": "_dlsym",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x101cb044c",
+      "target": "0x101da0ac4",
+      "symbol": "_socket",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x101cb05d4",
+      "target": "0x101da0164",
+      "symbol": "_connect",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x101ce6cc8",
+      "target": "0x101da0254",
+      "symbol": "_dlopen",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x101ce6ea0",
+      "target": "0x101da0260",
+      "symbol": "_dlsym",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x101ce72ac",
+      "target": "0x101da0254",
+      "symbol": "_dlopen",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x101ce72c0",
+      "target": "0x101da0260",
+      "symbol": "_dlsym",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x101d8620c",
+      "target": "0x101da0170",
+      "symbol": "_connectx",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x101d86220",
+      "target": "0x101da0164",
+      "symbol": "_connect",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x101d86630",
+      "target": "0x101da0ac4",
+      "symbol": "_socket",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x101d8b2dc",
+      "target": "0x101da0ac4",
+      "symbol": "_socket",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x101d9730c",
+      "target": "0x101da0ad0",
+      "symbol": "_socketpair",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x101d9f290",
+      "target": "0x101da0260",
+      "symbol": "_dlsym",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x101d9f2ac",
+      "target": "0x101da0260",
+      "symbol": "_dlsym",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x101d9f2c4",
+      "target": "0x101da0260",
+      "symbol": "_dlsym",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x101d9f2dc",
+      "target": "0x101da0260",
+      "symbol": "_dlsym",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x101d9f2f0",
+      "target": "0x101da0260",
+      "symbol": "_dlsym",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x101d9f30c",
+      "target": "0x101da0260",
+      "symbol": "_dlsym",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x101d9f324",
+      "target": "0x101da0260",
+      "symbol": "_dlsym",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x101d9f33c",
+      "target": "0x101da0260",
+      "symbol": "_dlsym",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x101d9f354",
+      "target": "0x101da0260",
+      "symbol": "_dlsym",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x101d9f36c",
+      "target": "0x101da0260",
+      "symbol": "_dlsym",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    },
+    {
+      "address": "0x101d9f384",
+      "target": "0x101da0260",
+      "symbol": "_dlsym",
+      "evidence": "direct ARM64 BL to import stub; runtime arguments/path unverified"
+    }
+  ],
+  "selectorsOnly": [
+    "_contextId",
+    "application:handleEventsForBackgroundURLSession:completionHandler:",
+    "dataTaskWithRequest:completionHandler:"
+  ],
+  "dns": [
+    {
+      "DNSSettings": {
+        "DNSProtocol": "HTTPS",
+        "ServerURL": "https://apple.dns.nextdns.io/a5b645"
+      },
+      "OnDemandRules": [
+        {
+          "Action": "EvaluateConnection",
+          "ActionParameters": [
+            {
+              "DomainAction": "NeverConnect",
+              "Domains": [
+                "captive.apple.com",
+                "3gppnetwork.org",
+                "dav.orange.fr",
+                "vvm.mobistar.be",
+                "vvm.mstore.msg.t-mobile.com",
+                "tma.vvm.mone.pan-net.eu",
+                "vvm.ee.co.uk"
+              ]
+            }
+          ]
+        },
+        {
+          "Action": "Connect"
+        }
+      ],
+      "PayloadType": "com.apple.dnsSettings.managed",
+      "PayloadIdentifier": "io.nextdns.a5b645.profile.dnsSettings.managed",
+      "PayloadUUID": "A1E2F262-DB73-40F6-BD22-2E42A43A3C94.a5b645.dnsSettings.managed",
+      "PayloadDisplayName": "Anti FF Max",
+      "PayloadOrganization": "Anti FF Max",
+      "PayloadVersion": 1
+    }
+  ],
+  "limits": [
+    "Static analysis only; no target process or runtime network destinations established.",
+    "Selector presence is not proof of invocation.",
+    "Dynamic resolution and obfuscation prevent a complete negative finding for injection/network/memory writes.",
+    "No evidence proving anti-ban behavior."
+  ]
+}
