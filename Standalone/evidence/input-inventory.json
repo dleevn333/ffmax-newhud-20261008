@@ -1,0 +1,42 @@
+[
+  {
+    "name": "FFMAX+DNS.tipa",
+    "bytes": 16226461,
+    "sha256": "0e0a540f352c6dfb234213fae6d93fec2929ddc0a8e952384f2d90652ab2cbbc"
+  },
+  {
+    "name": "com.dts.freefiremax_2.132.1_decrypted.ipa",
+    "bytes": 419070721,
+    "sha256": "4ff34c317289010cfaad175571aa6f2e816517f782f551d30a951390c36567c0"
+  },
+  {
+    "name": "FFDiag-10.log",
+    "bytes": 538700,
+    "sha256": "34cff80aab7109a40a41ba653d9cdf4339a093856006997d70c19f2a9deea0db"
+  },
+  {
+    "name": "FFDiag-V9.log",
+    "bytes": 822590,
+    "sha256": "30da52c540dcab07edbae766add404c1b91d7984f133aff9be242ac4e80113e0"
+  },
+  {
+    "name": "FFESP.log",
+    "bytes": 255,
+    "sha256": "2b9128dab5ce5086a8fc40cff6e7e624cbb0c41434df1877c446426720c4d3cb"
+  },
+  {
+    "name": "FFDiag-V6.log",
+    "bytes": 1139,
+    "sha256": "8306c93e917237a872f24589c754b44468a50306267399e6077be158a3fddb7a"
+  },
+  {
+    "name": "FFDiag-V7.log",
+    "bytes": 157437,
+    "sha256": "9317b79b8ea7bb2e23399f7ed36fe244f5b4b630218434cf64f17c693d6564a1"
+  },
+  {
+    "name": "FFDiag-V8.log",
+    "bytes": 563600,
+    "sha256": "c369f7429595ccc176304d897e70ec5cd1837a3afdcfa9cca0136bffb375ba02"
+  }
+]

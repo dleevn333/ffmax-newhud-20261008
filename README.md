@@ -1,5 +1,7 @@
 # FFMAX New HUD — mã nguồn giai đoạn 1
 
+**Target hiện tại (09/10/2026): [Standalone](Standalone/README.md).** Đây là nền tảng TIPA riêng, ESP bị chặn do chưa có nguồn dữ liệu được hỗ trợ, lớp phủ chưa được xác minh. Build mới không lấy bộ đọc bộ nhớ hoặc mô-đun chèn game bên dưới. Nội dung còn lại mô tả các thử nghiệm lịch sử; không phải cam kết chức năng của gói mới.
+
 Menu UIKit mới, không dùng binary HUD cũ và không có bước nhập key.
 
 Có: kiểm tra tiến trình FreeFireMAX, task_for_pid, liệt kê ảnh dyld, kiểm tra UUID UnityFramework đúng IPA đã cung cấp, đọc chuỗi GameFacade → static_fields → CurrentGame → m_Match, báo lỗi từng bước, xuất báo cáo JSON. Tất cả đọc bộ nhớ, không ghi vào game. Các phép đọc được chạy ngoài luồng giao diện. Task port được giải phóng sau mỗi kiểm tra; không giữ con trỏ giữa các lần kiểm tra.

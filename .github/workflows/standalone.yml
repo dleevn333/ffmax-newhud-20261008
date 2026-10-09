@@ -10,6 +10,8 @@ jobs:
       - uses: actions/checkout@v6
       - name: Test state, build and verify independent app
         run: bash Standalone/build.sh
+      - name: Launch on available simulator (not an iOS 16.6 device test)
+        run: bash Standalone/simulator.sh
       - uses: actions/upload-artifact@v4
         with:
           name: HUD-Foundation-not-ESP
@@ -17,4 +19,6 @@ jobs:
             build/standalone/*.tipa
             build/standalone/*.json
             build/standalone/tests.txt
+            build/standalone/simulator-*.png
+            build/standalone/simulator-launch.txt
           if-no-files-found: error
