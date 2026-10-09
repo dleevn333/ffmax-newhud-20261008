@@ -1,0 +1,19 @@
+{
+  "packageSHA256": "059647a8d52c156a04e18b4939f5e87f05934c280ec5a0a3d00ecb42e532e388",
+  "binarySHA256": "f310d495eb787011aa38d31c8261ab23a2a5475f937f0720f6766174511151e2",
+  "crc": "passed",
+  "architecture": "arm64",
+  "entitlements": {},
+  "libraries": [
+    "/System/Library/Frameworks/UIKit.framework/UIKit",
+    "/System/Library/Frameworks/Foundation.framework/Foundation",
+    "/usr/lib/libobjc.A.dylib",
+    "/usr/lib/libSystem.B.dylib",
+    "/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation"
+  ],
+  "forbiddenImports": "none",
+  "physicalDevice": "not_tested",
+  "esp": "blocked",
+  "overlay": "not_implemented",
+  "limitations": "Import checks alone are not a complete behavior proof; review the two compiled source files and build allowlist."
+}
